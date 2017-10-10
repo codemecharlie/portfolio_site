@@ -1,57 +1,152 @@
 * {
   box-sizing: border-box;
 }
+
 body{
     font-family: "Open Sans", sans-serif;
     color: #2d3c49;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-size: 16px;
     line-height: 1px;
-
 }
 
+/**** Header ****/
 header {
-  width: 100%;
+    width: 100%;
+    padding-right: 5px;
 }
 
-img udacity {
-
-.header-logo-bar{
-
+header .header-logo {
+    float: left;
 }
 
-h1{
-  letter-spacing: 1;
-  height: 5px;
-  border-bottom: 2px solid #7d97ad;
+div .udacity{
+    height: 75px;
+    width: 60px;
+    display: inline-block;
 }
 
-article {
+header .header-id{
+    text-align: right;
+}
+
+header .header-id h1{
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding-top: 30px;
+}
+
+h6{
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 0 0 15px 0;
+    border-bottom: 2px solid #7d97ad;
+  }
+
+/***** Navigation *****/
+
+/***** Main Work *****/
+article .main_img{
+    width: 100%;
+    border-bottom: 2px solid #7d97ad;
+}
+
+/***** Featured Work ****/
+section .feature{
     width: 100%;
 }
 
-h3{
+.feature h2{
     color: #7d97ad;
+    text-transform: none;
 }
 
-section .feature{
-  width: 100%;
-}
 .work{
     text-align: center;
-    display: inline-block;
+    display: inline-flex;
+}
+
+.work img{
+    width: 100%;
+    min-width: 231px;
+    min-height: 156px;
+    padding: 15px 20px 0 0;
+}
+
+.work h2{
+    color: #2d3c49;
 }
 
 .work p{
     text-transform: none;
     font-size: 0.75em;
+    padding: 10px;
 }
 
+.work .applify{
+    padding-left: 0px;
+}
+/***** Footer ****/
 
-@media screen and (min-width: 413px) and (max-width: 767px){
+
+@media screen and (max-width: 412px){
+/**** Header ****/
+div .udacity{
+    height: 60px;
+    width: 45px;
+    display: inline-block;
+}
+
+header .header-id h1{
+    font-weight: 100;
+    padding-top: 30px;
+    line-height: 1px;
+    font-size: 24px;
+  }
+
+h6{
+   font-size: 14px;
+   padding-bottom: 10px;
+   -webkit-margin-before: 1.5em;
+   -webkit-margin-after: 1.5em;
+}
+/**** Feature Section ***/
+section .feature{
+    width: 100%;
+  }
+
+.feature h2{
+    color: #7d97ad;
+    text-transform: none;
+    font-size: 20px;
+  }
+
+.work{
+    text-align: center;
+    max-width: 500px;
+  }
+
+.work img{
+    max-width: 20%;
+    padding-left: 15px;
+  }
+
+.work h2{
+    color: #2d3c49;
+    font-size: 1em;
+  }
+
+.work p{
+    text-transform: none;
+    font-size: 0.75em;
+    padding: 10px;
+  }
+
+.work .bokeh{
+    float: left;
+  }
 
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
-
-}
