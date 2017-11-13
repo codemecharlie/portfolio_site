@@ -60,7 +60,7 @@ h6 {
 .container {
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: stretch;
     align-items: stretch;
     flex-basis: 2 0 1;
