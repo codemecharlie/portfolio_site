@@ -21,9 +21,8 @@ header {
 }
 
 .udacity {
-    height: 75px;
-    width: 60px;
-    display: inline-block;
+    height: auto;
+    width: 100%;
 }
 
 .header-id {
@@ -34,21 +33,21 @@ header {
     font-weight: 100;
     letter-spacing: 1px;
     padding-top: 30px;
+    font-size: 1.5em;
 }
 
-h6 {
+.header-id h6 {
     font-size: 1em;
-    font-weight: bolder;
+    font-weight: bold;
     padding: 0 0 15px 0;
-    border-bottom: 2px solid #7d97ad;
   }
 
-/***** Navigation *****/
 
 /***** Main Work *****/
 .main_img {
     width: 100%;
     border-bottom: 2px solid #7d97ad;
+    border-top: 2px solid #7d97ad;
 }
 
 /***** Featured Work ****/
@@ -60,46 +59,61 @@ h6 {
 .container {
     width: 100%;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
 }
 
 .container h2 {
     color: #2d3c49;
+    font-size: 1em;
+    text-align: center;
 }
 
 .container p {
     text-transform: inherit;
-    font-size: 0.1em;
+    font-size: 0.5em;
     padding: 10px;
     text-align: center;
 }
 
+.container img{
+    padding: 5px;
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+}
 
+.mtsite {
+    padding-left: 40px;
+}
+
+.unplugged {
+    padding-right: 10px;
+}
 /***** Footer ****/
 .copyright {
-  text-align: center;
-  text-transform: none;
+    text-align: center;
+    text-transform: none;
 }
 
  .social {
-   text-align: center;
-   color: #000;
+    text-align: center;
+    color: #000;
  }
 
  .social a {
-   color: #2d3c49;
+    color: #2d3c49;
  }
 
  .social i {
-   padding: 10px;
+    padding: 10px;
  }
 
-@media screen and (min-width: 413px) {
+@media screen and (min-width: 732px) {
 /**** Header ****/
-.udacity {
-    height: 60px;
-    width: 45px;
-    display: inline-block;
+.header-id {
+    text-align: right;
+    padding-right: 0px;
 }
 
 .header-id h1 {
@@ -107,52 +121,60 @@ h6 {
     padding-top: 30px;
     line-height: 1px;
     font-size: 24px;
-  }
+}
 
-h6 {
+.header-id h6 {
    font-size: 14px;
-   padding-bottom: 10px;
+   padding-bottom: 5px;
    -webkit-margin-before: 1.5em;
    -webkit-margin-after: 1.5em;
 }
+
+/***** Main Work *****/
+.main_img {
+    width: 100%;
+    border-bottom: 2px solid #7d97ad;
+    border-top: 2px solid #7d97ad;
+    padding-right: 0px;
+}
+
 /**** Feature Section ***/
 .feature {
     width: 100%;
-  }
+}
 
 .feature h2 {
     color: #7d97ad;
     text-transform: none;
-    font-size: 20px;
-  }
+    font-size: 1.8em;
+}
 
-.container {
-    text-align: center;
-    width: auto;
-  }
 
 .container img {
     max-width: 100%;
-    max-height: auto;
-    padding-left: 15px;
-  }
+    padding-left: 5px;
+}
 
 .container h2 {
     color: #2d3c49;
     font-size: 1em;
-  }
+    text-align: center;
+}
 
 .container p {
+    text-align: center;
     text-transform: none;
     font-size: 0.75em;
     padding: 10px;
-  }
+}
 
-.container .unplugged {
-    float: left;
-  }
+.mtsite {
+    padding-left: 0px;
+}
 
+.unplugged {
+    padding-right: 0px;
 }
 
 
-@media screen and (min-width: 1024px){}
+}
