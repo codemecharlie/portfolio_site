@@ -60,16 +60,7 @@ h6 {
 .container {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-basis: 2 0 1;
-
-}
-
-.container img {
-    width: 100%;
-    max-height: auto;
-    padding: 15px 20px 0 0;
+    justify-content: space-around;
 }
 
 .container h2 {
@@ -83,17 +74,25 @@ h6 {
     text-align: center;
 }
 
-.container .mtsite {
-    padding-left: 0px;
-}
-.container .huaca {
-    width: 100%;
-}
-.container .unplugged {
-    max-height: auto;
-}
-/***** Footer ****/
 
+/***** Footer ****/
+.copyright {
+  text-align: center;
+  text-transform: none;
+}
+
+ .social {
+   text-align: center;
+   color: #000;
+ }
+
+ .social a {
+   color: #2d3c49;
+ }
+
+ .social i {
+   padding: 10px;
+ }
 
 @media screen and (min-width: 413px) {
 /**** Header ****/
