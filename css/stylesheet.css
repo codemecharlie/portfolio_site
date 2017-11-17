@@ -61,15 +61,7 @@ header {
     text-transform: none;
 }
 
-.mtsite {
-    width: 33.3%;
-}
-
-.huaca {
-    width: 33.3%;
-}
-
-.unplugged {
+.mtsite, .huaca, .unplugged {
     width: 33.3%;
 }
 
@@ -86,7 +78,7 @@ header {
     text-align: center;
 }
 
-.container img{
+.container img {
     padding: 5px;
     width: 100%;
     display: flex;
@@ -116,7 +108,7 @@ header {
 /**** Header ****/
 .header-id {
     text-align: right;
-    padding-right: 0px;
+
 }
 
 .header-id h1 {
